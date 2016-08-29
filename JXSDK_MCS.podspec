@@ -12,5 +12,5 @@ Pod::Spec.new do |s|
   s.frameworks  = "SystemConfiguration"
   s.libraries = 'c++', 'xml2', 'sqlite3', 'resolv'
   s.vendored_libraries = ['JXSDK_Lite/*.a']
-  s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC' }
+  s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC', 'ENABLE_BITCODE' => 'NO'}
 end
