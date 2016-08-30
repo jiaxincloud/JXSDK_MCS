@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JXSDK_MCS"
-  s.version      = "1.0.0"
+  s.version      = "1.0.4"
   s.summary      = "The SDK for mcsuser"
   s.homepage     = "https://github.com/jiaxincloud/JXSDK_MCS"
   s.license      = { :type => "MIT", :file => "LICENSE" }
@@ -12,5 +12,7 @@ Pod::Spec.new do |s|
   s.frameworks  = "SystemConfiguration"
   s.libraries = 'c++', 'xml2', 'sqlite3', 'resolv'
   s.vendored_libraries = ['JXSDK_Lite/*.a']
-  s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC', 'ENABLE_BITCODE' => 'NO'}
+  s.xcconfig = {'OTHER_LDFLAGS' => '-ObjC'}
+  s.user_target_xcconfig = {'ENABLE_BITCODE' => 'NO'}
+  s.pod_target_xcconfig = {'ENABLE_BITCODE' => 'NO'}
 end
