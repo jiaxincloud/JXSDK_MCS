@@ -1,6 +1,6 @@
 Pod::Spec.new do |s|
   s.name         = "JXSDK_MCS"
-  s.version      = "2.3.0"
+  s.version      = "2.3.4"
   s.summary      = "The SDK for mcsuser"
   s.homepage     = "https://github.com/jiaxincloud/JXSDK_MCS"
   s.license      = { :type => "MIT", :file => "LICENSE" }
