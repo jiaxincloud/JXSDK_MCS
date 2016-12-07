@@ -236,10 +236,11 @@
  @brief 设置视频消息的内容
  @param filePath    文件路径
  @param thumbPath   文件的首路径 （文件名）
+ @param duration    时长
  @discussion
  @result BOOL  yes 为设置成功，no 为设置失败
  */
-- (BOOL)setVideoContent:(NSString *)filePath thumbPath:(NSString *)thumbPath;
+- (BOOL)setVideoContent:(NSString *)filePath thumbPath:(NSString *)thumbPath duration:(NSInteger)duration;
 
 /*!
  @method

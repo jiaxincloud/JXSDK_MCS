@@ -117,6 +117,12 @@
  */
 @property(nonatomic, assign, readonly) BOOL orderOffLineEnable;
 
+
+/**
+ * 工单上传附件大小阈值
+ */
+@property(nonatomic, assign, readonly) NSInteger orderAttachSize;
+
 /**
  * 是否开启超时提醒统计
  */
@@ -173,6 +179,18 @@
  */
 @property(nonatomic, assign, readonly) BOOL agentEmoticonFlag;
 
+
+/**
+ 坐席是否能发送语音
+ */
+@property (nonatomic, assign, readonly) BOOL agentSendAudioFlag;
+
+
+/**
+ 坐席是否能发送视频
+ */
+@property (nonatomic, assign, readonly) BOOL agentSendVideoFlag;
+
 /**
  *  坐席是否能截屏
  */
@@ -192,6 +210,16 @@
  *  访客是否能发送文件
  */
 @property(nonatomic, assign, readonly) BOOL userSendFileFlag;
+
+/**
+ 访客是否能发送语音
+ */
+@property (nonatomic, assign, readonly) BOOL userSendAudioFlag;
+
+/**
+ 访客是否能发送视频
+ */
+@property (nonatomic, assign, readonly) BOOL userSendVideoFlag;
 
 /**
  *  坐席退出登录时是否强制退出会话

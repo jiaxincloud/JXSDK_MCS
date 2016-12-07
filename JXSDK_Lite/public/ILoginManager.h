@@ -40,6 +40,16 @@
 
 /*!
  @method
+ @brief 通过用户名，token来登录
+ @discussion
+ @param userName    用户名
+ @param token    token
+ @result
+ */
+- (void)loginWithUserName:(NSString *)userName token:(NSString *)token customerId:(NSString *)customerId;
+
+/*!
+ @method
  @brief 坐席或管理员通过email，密码来登录, sdk将自动获取appKey
  @discussion
  @param email       用户名

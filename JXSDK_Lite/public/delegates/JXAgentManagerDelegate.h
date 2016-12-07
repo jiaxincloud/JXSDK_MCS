@@ -49,4 +49,10 @@
  */
 - (void)didSession:(JXMcsSession *)session destoryWithError:(JXError *)error;
 
+
+/**
+ *  lj: 坐席退出讨论组
+ */
+- (void)didSession:(JXMcsSession *)session memberLeave:(NSString *)nickname;
+
 @end

@@ -16,10 +16,6 @@
 #import "JXError.h"
 #import "JXAppConfig.h"
 
-#ifndef sClient
-#define sClient [JXIMClient sharedInstance]
-#endif
-
 @interface JXIMClient : NSObject
 
 /*!

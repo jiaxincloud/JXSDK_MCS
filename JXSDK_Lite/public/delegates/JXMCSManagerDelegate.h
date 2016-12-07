@@ -23,4 +23,6 @@
 
 - (void)didReceiveTransferCustomerServiceRequest:(JXWorkgroup *)workgroup;
 
+- (void)didReceiveAgentLeaveMessage:(NSDictionary *)info;
+
 @end

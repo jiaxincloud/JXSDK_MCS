@@ -189,6 +189,7 @@ typedef NS_ENUM(NSInteger, JXErrorType) {
     JXErrorTypeMcsRecallReject,
     JXErrorTypeMcsChatTimeout, // 访客或坐席会话超时
     JXErrorTypeMcsSessionGrab, // 会话被抢接
+    JXErrorTypeMcsSessionKick, // 多客服群聊被踢
 
     JXErrorTypeMcsCustmerInfoNil,
     JXErrorTypeMcsTransferFailedReasonOffline,
