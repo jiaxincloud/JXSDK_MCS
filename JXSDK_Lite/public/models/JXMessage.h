@@ -142,21 +142,34 @@
 
 /*!
  @class
- @brief 富文本消息的链接
+ @brief 富文本(图文)消息的链接
  */
 @property(nonatomic, copy) NSString *linkURL;
 
 /*!
  @class
- @brief 富文本消息的标题
+ @brief 富文本(图文)消息的标题
  */
 @property(nonatomic, copy) NSString *title;
 
 /*!
  @class
- @brief 富文本消息的内容
+ @brief 富文本(图文)消息的内容
  */
 @property(nonatomic, copy) NSString *content;
+
+
+/*!
+ @class
+ @brief 图文消息创建时间
+ */
+@property (nonatomic, copy) NSString *date;
+
+/*!
+ @class
+ @brief 图文消息图片的链接
+ */
+//@property (nonatomic, copy) NSString *picUrl;
 
 /*!
  @method
@@ -267,6 +280,23 @@
                      title:(NSString *)title
                    linkURL:(NSString *)url
                      image:(NSData *)imageData;
+
+
+/**
+ 设置图文消息的内容
+
+ @param content 文本内容
+ @param title 文本标题
+ @param picUrl 图片链接
+ @param linkUrl 跳转链接
+ @param date 创建时间
+ @return yes为成功 no为失败
+ */
+- (BOOL)setPicTextContent:(NSString *)content
+                    title:(NSString *)title
+                   picUrl:(NSString *)picUrl
+                  linkUrl:(NSString *)linkUrl
+                     date:(NSString *)date;
 
 /*!
  @method

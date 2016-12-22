@@ -21,12 +21,13 @@ typedef NS_ENUM(NSInteger, JXMessageType) {
     JXMessageTypeFile,
     // other
     JXMessageTypeRichText,
-    JXMessageTypeTips,
+    JXMessageTypePicText,
     JXMessageTypeVoiceCall,
     JXMessageTypeVideoCall,
     JXMessageTypeEvaluation,
     JXMessageTypeForeseeComposing,
     JXMessageTypeForeseeRecording,
+    JXMessageTypeTips,
 };
 
 //聊天类型
@@ -188,6 +189,7 @@ typedef NS_ENUM(NSInteger, JXErrorType) {
     JXErrorTypeMcsEnterGroupInOther,
     JXErrorTypeMcsRecallReject,
     JXErrorTypeMcsChatTimeout, // 访客或坐席会话超时
+    JXErrorTypeMcsChatAutoClose, // 会话自动结束
     JXErrorTypeMcsSessionGrab, // 会话被抢接
     JXErrorTypeMcsSessionKick, // 多客服群聊被踢
 
