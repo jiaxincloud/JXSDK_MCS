@@ -55,4 +55,10 @@
  */
 - (void)didSession:(JXMcsSession *)session memberLeave:(NSString *)nickname;
 
+
+/**
+ *  lj: 呼叫中心外线专家模式设置失败
+ */
+- (void)didCallCenterExternalLineCallSetFailed;
+
 @end

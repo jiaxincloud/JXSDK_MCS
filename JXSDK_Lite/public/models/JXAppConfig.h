@@ -150,6 +150,14 @@
 @property(nonatomic, assign, readonly) BOOL ccMultLang;
 
 /**
+ * 呼叫中心外线模式
+ * 0 为没有呼叫中心功能
+ * 1 为自由模式
+ * 2 为时间模式
+ */
+@property(nonatomic, assign, readonly) NSInteger ccOutsideMode;
+
+/**
  * 机器人转人工 出错次数
  */
 @property(nonatomic, assign, readonly) NSInteger rbtAutoTransferNum;
